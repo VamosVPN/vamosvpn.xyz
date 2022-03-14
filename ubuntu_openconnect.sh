@@ -2,10 +2,10 @@
 cp /usr/share/zoneinfo/Asia/Dubai /etc/localtime
 
 #Database Details
-db_host='209.159.152.66';
-db_user='crypticv_freedata';
-db_pass='@@@@F1r3n3t';
-db_name='crypticv_freedata';
+db_host='66.45.228.57';
+db_user='vamosvpn_vamos';
+db_pass='@@@@Vamos123';
+db_name='vamosvpn_vamos';
 
 install_require()
 {
