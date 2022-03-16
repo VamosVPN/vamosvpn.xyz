@@ -681,11 +681,13 @@ install_rclocal(){
     dos2unix /etc/ubuntu
     chmod +x /etc/ubuntu    
     screen -dmS socks python /etc/ubuntu
+    service ufw stop
     wget --no-check-certificate https://pastebin.com/raw/658HpnLd -O /etc/systemd/system/rc-local.service
     echo "#!/bin/sh -e
 iptables-restore < /etc/iptables_rules.v4
 ip6tables-restore < /etc/iptables_rules.v6
 sysctl -p
+service ufw stop
 service squid3 restart
 service stunnel4 restart
 service openvpn@server restart
